@@ -3,6 +3,9 @@ from __future__ import annotations
 import logging
 import os
 
+from datetime import datetime, timedelta
+
+
 import pendulum
 
 from airflow import DAG
@@ -28,8 +31,8 @@ except ImportError:
 if k8s:
     with DAG(
         dag_id='example_kubernetes_executor',
-        schedule=None,
         start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
+        schedule_interval=timedelta(days=1),
         catchup=False,
         tags=['example3'],
     ) as dag:
