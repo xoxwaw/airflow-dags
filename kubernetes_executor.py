@@ -2,6 +2,9 @@ import os
 
 import pendulum
 
+from datetime import datetime, timedelta
+
+
 from airflow import DAG
 from airflow.decorators import task
 from airflow.example_dags.libs.helper import print_stuff
@@ -11,7 +14,7 @@ from kubernetes.client import models as k8s
 
 with DAG(
     dag_id="example_pod_template_file",
-    schedule_interval='once',
+    schedule_interval=timedelta(days=1),
     start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
     catchup=False,
     tags=["example3"],
