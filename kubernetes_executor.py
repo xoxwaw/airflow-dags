@@ -11,7 +11,7 @@ from kubernetes.client import models as k8s
 
 with DAG(
     dag_id="example_pod_template_file",
-    schedule_interval=None,
+    schedule_interval='once',
     start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
     catchup=False,
     tags=["example3"],
