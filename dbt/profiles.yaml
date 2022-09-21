@@ -1,4 +1,4 @@
-default:
+bigquery:
   target: dev
   outputs:
     dev:
