@@ -8,3 +8,4 @@ bigquery:
       dataset: airflow_refine
       threads: 4
       keyfile: ./sa.json
+      location: asia-southeast2
