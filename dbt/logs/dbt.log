@@ -1,0 +1,11 @@
+
+
+============================== 2022-09-13 07:49:43.062007 | 46d887d4-b214-483e-9dff-7b66b045a0a8 ==============================
+07:49:43.062019 [info ] [MainThread]: Running with dbt=1.1.2
+07:49:43.062559 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/phi/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': True, 'which': 'debug', 'indirect_selection': 'eager'}
+07:49:43.062708 [debug] [MainThread]: Tracking: tracking
+07:49:43.107712 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0212e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a021850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0215e0>]}
+07:49:43.108635 [info ] [MainThread]: To view your profiles.yml file, run:
+
+open /Users/phi/.dbt
+07:49:43.108950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a021850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a0215e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a021f10>]}
