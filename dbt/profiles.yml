@@ -7,4 +7,4 @@ bigquery:
       project: storage-44a30d2d
       dataset: airflow_refine
       threads: 4
-      keyfile: /opt/airflow/dags/dbt/sa.json
+      keyfile: ./sa.json
