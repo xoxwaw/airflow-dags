@@ -1,0 +1,10 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: storage-44a30d2d
+      dataset: airflow-refine
+      threads: 4
+      keyfile: ./sa.json
