@@ -5,7 +5,7 @@ bigquery:
       type: bigquery
       method: service-account
       project: storage-44a30d2d
-      dataset: airflow_refine
+      dataset: airflow_refine_v2
       threads: 4
       keyfile: ./sa.json
       location: asia-southeast2
