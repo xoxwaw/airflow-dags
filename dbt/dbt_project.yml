@@ -19,7 +19,7 @@ seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 log-path: "/opt/airflow/logs/"
-modules-path: "/opt/airflow/modules"
+packages-install-path: "/opt/airflow/modules"
 
 target-path: "/opt/airflow/logs/"  # directory which will store compiled SQL files
 
