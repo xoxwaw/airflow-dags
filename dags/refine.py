@@ -22,7 +22,7 @@ dag = DAG(
 
 task_transform_data_in_db = BashOperator(
     task_id='task_transform_data_in_db',
-    bash_command='dbt run --project-dir {} ---profiles-dir {}'.format(os.path.join(DBT_ROOT_PATH, 'dbt'), os.path.join(DBT_ROOT_PATH, 'dbt')),
+    bash_command='dbt run --project-dir {} --profiles-dir {}'.format(os.path.join(DBT_ROOT_PATH, 'dbt'), os.path.join(DBT_ROOT_PATH, 'dbt')),
     dag=dag)
 
 
