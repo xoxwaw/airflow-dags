@@ -17,7 +17,7 @@ default_args = {
 # The DAG definition
 dag = DAG(
     dag_id='dbt_aggregate',
-    schedule="0 5 * * *",
+    schedule_interval="0 5 * * *",
     default_args=default_args,
 )
 
