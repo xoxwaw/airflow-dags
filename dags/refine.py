@@ -18,17 +18,16 @@ default_args = {
 
 # The DAG definition
 dag = DAG(
-    dag_id='refine_dbt',
+    dag_id='dbt_refine',
     default_args=default_args,
-    schedule_interval=timedelta(days=1),
-    start_date=datetime(2022, 9, 27, 1),
+    schedule="0 1 * * *",
 )
 
-task_transform_data_in_db = BashOperator(
-    task_id='task_transform_data_in_db',
-    bash_command='dbt run --project-dir {} --profiles-dir {}'.format(os.path.join(DBT_ROOT_PATH, 'dbt'), os.path.join(DBT_ROOT_PATH, 'dbt')),
+run_refine_job = BashOperator(
+    task_id='refine',
+    bash_command='dbt run --project-dir {} --profiles-dir {}'.format(os.path.join(DBT_ROOT_PATH, 'dbt/refine'),
+                                                                     os.path.join(DBT_ROOT_PATH, 'dbt/refine')),
     dag=dag)
 
+run_refine_job
 
-# DAG dependencies
-task_transform_data_in_db
