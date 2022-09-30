@@ -4,7 +4,7 @@ bigquery:
     dev:
       type: bigquery
       method: oauth
-      project: "{{ env_var('GCP_PROJECT') }}"
+      project: storage-44a30d2d
       dataset: airflow_refine_v2
       threads: 4
       location: asia-southeast2
