@@ -20,7 +20,7 @@ default_args = {
 
 # The DAG definition
 dag = DAG(
-    dag_id='refine dbt',
+    dag_id='refine_dbt',
     default_args=default_args,
     schedule_interval=timedelta(days=1),
     start_date=datetime(2022, 9, 27),
