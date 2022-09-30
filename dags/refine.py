@@ -14,8 +14,6 @@ default_args = {
     "owner": "Airflow",
     "start_date": airflow.utils.dates.days_ago(1),
     'email': ['phi@honestbank.com'],
-    'email_on_failure': True,
-    'email_on_success': True,
 }
 
 # The DAG definition
