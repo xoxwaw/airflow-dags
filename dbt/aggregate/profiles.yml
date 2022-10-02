@@ -1,0 +1,10 @@
+bigquery:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: storage-44a30d2d
+      dataset: aggregate
+      threads: 4
+      location: asia-southeast2
