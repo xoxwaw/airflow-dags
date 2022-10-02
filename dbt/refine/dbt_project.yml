@@ -31,7 +31,4 @@ target-path: "/opt/airflow/logs/"  # directory which will store compiled SQL fil
 # using the `{{ config(...) }}` macro.
 models:
   base_dbt_job:
-    refine:
-      +materialized: table
-    aggregate:
-      +materialized: table
+    +materialized: table
