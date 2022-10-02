@@ -5,6 +5,6 @@ bigquery:
       type: bigquery
       method: oauth
       project: storage-44a30d2d
-      dataset: refine
+      dataset: dbt_refine
       threads: 4
       location: asia-southeast2

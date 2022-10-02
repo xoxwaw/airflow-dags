@@ -5,6 +5,6 @@ bigquery:
       type: bigquery
       method: oauth
       project: storage-44a30d2d
-      dataset: aggregate
+      dataset: dbt_aggregate
       threads: 4
       location: asia-southeast2
