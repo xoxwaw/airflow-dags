@@ -17,10 +17,8 @@ default_args = {
 # The DAG definition
 dag = DAG(
     dag_id='dbt_refine',
-    schedule="0 1 * * *",
+    schedule_interval="0 1 * * *",
     default_args=default_args,
-    schedule_interval=timedelta(days=1),
-    start_date=datetime(2022, 9, 27),
 )
 
 run_refine_job = BashOperator(

@@ -17,10 +17,9 @@ default_args = {
 # The DAG definition
 dag = DAG(
     dag_id='dbt_aggregate',
-    schedule="0 5 * * *",
+    schedule_interval="0 5 * * *",
     default_args=default_args,
-    schedule_interval=timedelta(days=1),
-    start_date=datetime(2022, 9, 27),
+
 )
 
 run_aggregate_job = BashOperator(
