@@ -1,7 +1,0 @@
-version: 2
-models:
-  - name: account_updates
-    columns:
-      - name: principal_crn
-        tests:
-          - not_null
